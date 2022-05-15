@@ -10,7 +10,7 @@ Restaurant.destroy_all
 puts 'database clean'
 
 20.times do
-  restaurant =Restaurant.create(
+  restaurant = Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     category: %w[chinese italian japanese french belgian].sample
